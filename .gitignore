@@ -1,0 +1,8 @@
+*.bat
+*.pyc
+.pypirc
+.vscode/
+__pycache__/
+dist/
+build/
+tdbear.egg-info/
