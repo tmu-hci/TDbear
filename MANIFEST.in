@@ -1,3 +1,4 @@
+exclude setup.py
 exclude MANIFEST.in
 exclude .pypirc
 recursive-include tdbear/analyzer/dataset *
