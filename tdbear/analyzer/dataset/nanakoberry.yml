@@ -1,0 +1,969 @@
+# nanakoberry.yml
+# Strawberry TDS data for TDbear
+
+meta:
+  ASSESSOR: [PA]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 14.5285
+
+data:
+  AROMATIC: [1.6579, 11.4322]
+  FRUITY: [2.3774, 7.4003, 12.3359]
+  GREEN: []
+  JUICY: [3.1840, 8.2410, 13.6662]
+  LIGHT: [3.9677]
+  SOUR: [4.7115, 10.1449]
+  SWEET: [0.4163, 5.4961, 9.3283]
+  WATERY: [1.0564, 6.0645]
+
+---
+
+meta:
+  ASSESSOR: [PA]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 17.0072
+
+data:
+  AROMATIC: [2.0705, 7.3913]
+  FRUITY: [2.7912, 8.1756, 13.9902]
+  GREEN: [15.4864]
+  JUICY: [4.3748, 9.3051]
+  LIGHT: [14.6236]
+  SOUR: [5.5393, 11.4463]
+  SWEET: [0.9835, 6.6626, 12.0870]
+  WATERY: [3.5675]
+
+---
+
+meta:
+  ASSESSOR: [PA]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 17.8868
+
+data:
+  AROMATIC: [3.2642, 6.4627]
+  FRUITY: [7.3597]
+  GREEN: [16.0149]
+  JUICY: [2.0392, 5.4865, 9.8552, 12.6714]
+  LIGHT: [14.7383]
+  SOUR: [1.4239, 9.1034, 13.7662]
+  SWEET: [0.6464, 4.0622, 8.0714]
+  WATERY: [2.5432, 4.9745, 11.0385]
+
+---
+
+meta:
+  ASSESSOR: [PB]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 42.7520
+
+data:
+  AROMATIC: []
+  FRUITY: [16.1838]
+  GREEN: []
+  JUICY: []
+  LIGHT: []
+  SOUR: [26.8875]
+  SWEET: [10.5355]
+  WATERY: [4.3603]
+
+---
+
+meta:
+  ASSESSOR: [PB]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 40.1840
+
+data:
+  AROMATIC: []
+  FRUITY: [12.9191]
+  GREEN: []
+  JUICY: [6.2719]
+  LIGHT: []
+  SOUR: [19.2555]
+  SWEET: [2.1108]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PB]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 54.1771
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: [14.2317]
+  JUICY: [9.6234]
+  LIGHT: [24.7514]
+  SOUR: [5.6006, 50.1438]
+  SWEET: []
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PC]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 39.7691
+
+data:
+  AROMATIC: [4.0074, 16.9465]
+  FRUITY: [9.0634]
+  GREEN: []
+  JUICY: [12.7852]
+  LIGHT: []
+  SOUR: []
+  SWEET: [2.4956, 27.6232]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PC]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 41.8139
+
+data:
+  AROMATIC: [14.2938, 23.8057]
+  FRUITY: [7.4541]
+  GREEN: []
+  JUICY: [3.1125]
+  LIGHT: [5.8695]
+  SOUR: []
+  SWEET: [9.9821, 20.0708]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PC]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 40.9519
+
+data:
+  AROMATIC: [12.6715, 21.4541]
+  FRUITY: [4.4474]
+  GREEN: [17.8720]
+  JUICY: [1.9991]
+  LIGHT: []
+  SOUR: []
+  SWEET: []
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PD]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 36.4915
+
+data:
+  AROMATIC: []
+  FRUITY: [9.5317, 29.8442]
+  GREEN: [13.0366]
+  JUICY: [6.2940, 20.2831]
+  LIGHT: [18.4280, 27.3640]
+  SOUR: [3.3195, 11.6203, 22.2282, 32.4683]
+  SWEET: [1.7642, 8.0917, 16.4440]
+  WATERY: [4.4288, 14.5477]
+
+---
+
+meta:
+  ASSESSOR: [PD]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 27.5667
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: [17.5981]
+  JUICY: [6.4064, 15.9030]
+  LIGHT: []
+  SOUR: [2.0070, 4.9831, 8.0548, 11.5188, 19.5340, 24.6144]
+  SWEET: []
+  WATERY: [2.9355, 9.3904, 13.6723, 21.1832]
+
+---
+
+meta:
+  ASSESSOR: [PD]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 30.2803
+
+data:
+  AROMATIC: [10.3594]
+  FRUITY: [18.3756]
+  GREEN: [20.9759]
+  JUICY: [8.0722, 23.8398]
+  LIGHT: [22.1840]
+  SOUR: [1.8714, 4.8311, 14.9193, 19.6783, 25.5676]
+  SWEET: [3.1916, 12.5133]
+  WATERY: [6.6317, 16.1436]
+
+---
+
+meta:
+  ASSESSOR: [PE]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 41.7424
+
+data:
+  AROMATIC: [6.4592]
+  FRUITY: []
+  GREEN: []
+  JUICY: [34.4603]
+  LIGHT: []
+  SOUR: []
+  SWEET: [17.9961]
+  WATERY: [2.1792, 12.4353, 25.3870]
+
+---
+
+meta:
+  ASSESSOR: [PE]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 40.2796
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: []
+  JUICY: [5.0457, 19.4785]
+  LIGHT: []
+  SOUR: []
+  SWEET: [10.8133, 29.2010]
+  WATERY: [2.0805, 16.0726]
+
+---
+
+meta:
+  ASSESSOR: [PE]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 44.1750
+
+data:
+  AROMATIC: []
+  FRUITY: [6.7989]
+  GREEN: []
+  JUICY: [2.7985, 16.3355]
+  LIGHT: []
+  SOUR: [24.6714]
+  SWEET: []
+  WATERY: [9.8551]
+
+---
+
+meta:
+  ASSESSOR: [PF]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 24.7698
+
+data:
+  AROMATIC: [6.8644]
+  FRUITY: [11.1749]
+  GREEN: []
+  JUICY: [3.7989]
+  LIGHT: []
+  SOUR: [23.1265]
+  SWEET: [15.5997]
+  WATERY: [1.4310]
+
+---
+
+meta:
+  ASSESSOR: [PF]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 32.0608
+
+data:
+  AROMATIC: [11.4687]
+  FRUITY: [13.4205]
+  GREEN: [14.9572, 20.6856]
+  JUICY: [6.3034]
+  LIGHT: []
+  SOUR: [18.1898]
+  SWEET: [1.8680]
+  WATERY: [4.9971]
+
+---
+
+meta:
+  ASSESSOR: [PF]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 33.0622
+
+data:
+  AROMATIC: [8.6563]
+  FRUITY: [11.6582]
+  GREEN: [19.3122]
+  JUICY: [3.3659]
+  LIGHT: [14.6084]
+  SOUR: [4.8462]
+  SWEET: []
+  WATERY: [1.6781]
+
+---
+
+meta:
+  ASSESSOR: [PG]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 23.4124
+
+data:
+  AROMATIC: []
+  FRUITY: [1.3201]
+  GREEN: []
+  JUICY: []
+  LIGHT: [3.3947, 11.4722]
+  SOUR: [8.8248, 16.3143]
+  SWEET: []
+  WATERY: [5.5120, 18.1920]
+
+---
+
+meta:
+  ASSESSOR: [PG]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 20.2309
+
+data:
+  AROMATIC: []
+  FRUITY: [4.5183, 14.8162]
+  GREEN: []
+  JUICY: [6.3432]
+  LIGHT: [8.1836]
+  SOUR: [18.4944]
+  SWEET: [0.5915]
+  WATERY: [2.1988, 9.5186]
+
+---
+
+meta:
+  ASSESSOR: [PG]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 24.2717
+
+data:
+  AROMATIC: []
+  FRUITY: [6.5198]
+  GREEN: []
+  JUICY: []
+  LIGHT: [4.6099, 19.4972]
+  SOUR: [11.6559]
+  SWEET: []
+  WATERY: [1.2339, 9.1773, 16.3992]
+
+---
+
+meta:
+  ASSESSOR: [PH]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 45.4546
+
+data:
+  AROMATIC: []
+  FRUITY: [8.1828]
+  GREEN: [23.5123, 30.9184]
+  JUICY: []
+  LIGHT: [20.1175, 35.8470]
+  SOUR: [13.2139]
+  SWEET: [4.4951]
+  WATERY: [12.1438, 27.8476]
+
+---
+
+meta:
+  ASSESSOR: [PH]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 40.5752
+
+data:
+  AROMATIC: [6.1932]
+  FRUITY: [8.4469]
+  GREEN: [22.0553]
+  JUICY: [13.1115]
+  LIGHT: [15.3590]
+  SOUR: [18.1074, 30.5911]
+  SWEET: [3.2867, 21.1432]
+  WATERY: [25.9268, 31.7678]
+
+---
+
+meta:
+  ASSESSOR: [PH]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 44.0540
+
+data:
+  AROMATIC: [4.8470]
+  FRUITY: [12.0231]
+  GREEN: [26.7504, 34.6960, 39.5581]
+  JUICY: [7.5584]
+  LIGHT: []
+  SOUR: [14.4389, 32.9624]
+  SWEET: [2.1349, 21.0555]
+  WATERY: [21.9990, 37.1902]
+
+---
+
+meta:
+  ASSESSOR: [PI]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 31.5456
+
+data:
+  AROMATIC: [21.9787]
+  FRUITY: [10.4672]
+  GREEN: []
+  JUICY: []
+  LIGHT: [6.0038]
+  SOUR: []
+  SWEET: [13.4044, 24.2202]
+  WATERY: [1.7162]
+
+---
+
+meta:
+  ASSESSOR: [PI]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 42.0870
+
+data:
+  AROMATIC: [11.2704]
+  FRUITY: [8.4629]
+  GREEN: [5.5827]
+  JUICY: [14.4474]
+  LIGHT: []
+  SOUR: [2.6309]
+  SWEET: [19.5194]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PI]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 40.0554
+
+data:
+  AROMATIC: [7.5980]
+  FRUITY: [14.0780]
+  GREEN: []
+  JUICY: [3.3464]
+  LIGHT: []
+  SOUR: [1.1903]
+  SWEET: [27.1105]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PJ]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 55.2474
+
+data:
+  AROMATIC: [8.5605]
+  FRUITY: [6.9280]
+  GREEN: [52.4645]
+  JUICY: [3.5277, 12.5432]
+  LIGHT: [4.0202]
+  SOUR: [16.2400]
+  SWEET: [1.0830, 5.4567, 11.1916, 13.8873, 38.2327]
+  WATERY: [39.2248]
+
+---
+
+meta:
+  ASSESSOR: [PJ]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 68.6548
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: []
+  JUICY: [8.6477]
+  LIGHT: [15.1745]
+  SOUR: [3.8949, 13.6233, 23.9436, 44.5852]
+  SWEET: [5.3507]
+  WATERY: [30.9922, 52.7110]
+
+---
+
+meta:
+  ASSESSOR: [PJ]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 56.2646
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: [31.8234]
+  JUICY: [9.1437, 21.7137]
+  LIGHT: [10.1832]
+  SOUR: [7.2473, 14.0312, 23.7033]
+  SWEET: []
+  WATERY: [5.8076]
+
+---
+
+meta:
+  ASSESSOR: [PK]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 30.4797
+
+data:
+  AROMATIC: []
+  FRUITY: [11.2625]
+  GREEN: []
+  JUICY: [7.1824]
+  LIGHT: [17.5184]
+  SOUR: [21.9993]
+  SWEET: [3.5348]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PK]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 34.9668
+
+data:
+  AROMATIC: [10.7121]
+  FRUITY: [4.9440]
+  GREEN: []
+  JUICY: [14.4629]
+  LIGHT: []
+  SOUR: [24.1510]
+  SWEET: [21.5202]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PK]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 35.5912
+
+data:
+  AROMATIC: [8.4874]
+  FRUITY: []
+  GREEN: [17.8566]
+  JUICY: [10.5110]
+  LIGHT: [20.1768]
+  SOUR: [25.5192]
+  SWEET: [3.4397]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PL]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 30.7914
+
+data:
+  AROMATIC: [12.2962]
+  FRUITY: [18.2640]
+  GREEN: [7.5921]
+  JUICY: [4.5673, 16.5671]
+  LIGHT: []
+  SOUR: [9.9513, 22.1274]
+  SWEET: []
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PL]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 31.8949
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: [14.8246]
+  JUICY: [4.9985]
+  LIGHT: []
+  SOUR: [9.5826, 21.0947]
+  SWEET: [3.1833]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PL]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 30.3584
+
+data:
+  AROMATIC: [7.6710]
+  FRUITY: [6.5992]
+  GREEN: [14.7743]
+  JUICY: []
+  LIGHT: []
+  SOUR: [10.2627, 18.9816]
+  SWEET: []
+  WATERY: [4.8236]
+
+---
+
+meta:
+  ASSESSOR: [PM]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 47.4462
+
+data:
+  AROMATIC: [16.8539]
+  FRUITY: [7.1341]
+  GREEN: []
+  JUICY: []
+  LIGHT: [36.8460]
+  SOUR: []
+  SWEET: [3.5423]
+  WATERY: [26.9665]
+
+---
+
+meta:
+  ASSESSOR: [PM]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 38.4229
+
+data:
+  AROMATIC: []
+  FRUITY: [9.7346]
+  GREEN: []
+  JUICY: [4.6068]
+  LIGHT: [25.8464]
+  SOUR: []
+  SWEET: [3.1428]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PM]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 46.1743
+
+data:
+  AROMATIC: []
+  FRUITY: [10.4468]
+  GREEN: []
+  JUICY: [4.7670]
+  LIGHT: [26.9117]
+  SOUR: []
+  SWEET: [2.8629, 16.1343]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PN]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 38.0920
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: []
+  JUICY: [4.9784]
+  LIGHT: []
+  SOUR: [5.7194]
+  SWEET: []
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PN]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 31.2772
+
+data:
+  AROMATIC: []
+  FRUITY: [6.1347]
+  GREEN: []
+  JUICY: [1.1828]
+  LIGHT: [16.9087]
+  SOUR: []
+  SWEET: [2.5205]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PN]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 33.4072
+
+data:
+  AROMATIC: []
+  FRUITY: []
+  GREEN: []
+  JUICY: [3.5028]
+  LIGHT: [9.2390, 31.1994]
+  SOUR: [10.8906]
+  SWEET: [6.0228]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PO]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 26.5992
+
+data:
+  AROMATIC: [12.0782]
+  FRUITY: []
+  GREEN: []
+  JUICY: [6.2791]
+  LIGHT: [19.8628]
+  SOUR: []
+  SWEET: [2.6463]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PO]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 24.3574
+
+data:
+  AROMATIC: [7.6380]
+  FRUITY: [16.3824]
+  GREEN: []
+  JUICY: [3.7902]
+  LIGHT: [10.6594]
+  SOUR: [21.3234]
+  SWEET: []
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PO]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 22.1030
+
+data:
+  AROMATIC: [6.9966]
+  FRUITY: []
+  GREEN: []
+  JUICY: [10.9518]
+  LIGHT: [4.1997]
+  SOUR: []
+  SWEET: [16.9107]
+  WATERY: []
+
+---
+
+meta:
+  ASSESSOR: [PP]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 32.3535
+
+data:
+  AROMATIC: [4.9761]
+  FRUITY: [11.7681]
+  GREEN: []
+  JUICY: [3.6959, 18.3442, 27.0479]
+  LIGHT: [15.9601]
+  SOUR: [7.9997]
+  SWEET: [22.3441]
+  WATERY: [1.4568]
+
+---
+
+meta:
+  ASSESSOR: [PP]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 30.5773
+
+data:
+  AROMATIC: []
+  FRUITY: [9.7272]
+  GREEN: []
+  JUICY: [1.9915, 11.0799, 23.2628]
+  LIGHT: []
+  SOUR: [6.2549, 15.2796]
+  SWEET: [18.4248]
+  WATERY: [3.6429]
+
+---
+
+meta:
+  ASSESSOR: [PP]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 32.2065
+
+data:
+  AROMATIC: [20.5426, 28.1825]
+  FRUITY: [5.7322, 11.2069]
+  GREEN: [9.2947]
+  JUICY: [16.7746]
+  LIGHT: []
+  SOUR: [2.7591, 14.6964, 23.6618]
+  SWEET: [1.5821]
+  WATERY: [7.0233]
+
+---
+
+meta:
+  ASSESSOR: [PQ]
+  COUNT: [1]
+  PRODUCT: [strawberry]
+
+duration: 37.1036
+
+data:
+  AROMATIC: [13.6179]
+  FRUITY: []
+  GREEN: []
+  JUICY: [11.1212]
+  LIGHT: []
+  SOUR: [19.3914, 29.5839]
+  SWEET: [27.2479]
+  WATERY: [6.5359]
+
+---
+
+meta:
+  ASSESSOR: [PQ]
+  COUNT: [2]
+  PRODUCT: [strawberry]
+
+duration: 43.0885
+
+data:
+  AROMATIC: [19.0471]
+  FRUITY: []
+  GREEN: []
+  JUICY: [3.7690]
+  LIGHT: []
+  SOUR: []
+  SWEET: [9.7751, 17.0229, 22.4309]
+  WATERY: [11.1359]
+
+---
+
+meta:
+  ASSESSOR: [PQ]
+  COUNT: [3]
+  PRODUCT: [strawberry]
+
+duration: 38.7347
+
+data:
+  AROMATIC: []
+  FRUITY: [14.4876]
+  GREEN: []
+  JUICY: [3.1139]
+  LIGHT: []
+  SOUR: [9.2069]
+  SWEET: [11.8322, 19.4731]
+  WATERY: [5.4160, 23.0486]
