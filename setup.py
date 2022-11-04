@@ -2,14 +2,13 @@ import setuptools
 import os
 
 package_name: str = "tdbear"
-package_version: str = "1.0.7"
+package_version: str = "1.0.8"
 
 root_dir: str = os.path.abspath(os.path.dirname(__file__))
 long_description: str = ""
 install_requires: list[str] = []
 
 with open(os.path.join(root_dir, "requirements.txt"), "r", encoding="UTF-8") as f:
-
     install_requires = [*map(str.strip, f.readlines())]
 
 with open("README.md", "r", encoding="UTF-8") as f:
