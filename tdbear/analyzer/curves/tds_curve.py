@@ -20,8 +20,6 @@ class TDSCurve(Curve):
     A class representing time-series data of TDS trials.
     """
 
-    __cache = {}
-
     @staticmethod
     def from_dict(dic: dict, resolution: int = 1000) -> TDSCurve:
         timing_data: dict[str, list[float]] = dic["data"]
