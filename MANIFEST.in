@@ -1,9 +1,10 @@
 exclude setup.py
 exclude MANIFEST.in
 exclude .pypirc
-recursive-include tdbear/analyzer/dataset *
 global-exclude *.bat
 global-exclude *.pyc
+global-exclude .flake8
 global-exclude .vscode
 global-exclude .gitignore
 global-exclude __pycache__
+recursive-include tdbear/analyzer/dataset *
