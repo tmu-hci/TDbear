@@ -8,3 +8,4 @@ global-exclude .vscode
 global-exclude .gitignore
 global-exclude __pycache__
 recursive-include tdbear/analyzer/dataset *
+recursive-include tdbear/sampler/ *

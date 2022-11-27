@@ -10,32 +10,74 @@ from ..labels import Labels
 
 
 class Curve(metaclass=abc.ABCMeta):
-    """# `tdbear.analyzer.Curve`"""
+    """# `tdbear.analyzer.Curve`
 
+    A base class for `TDSCurve`.
+    """
+
+    """# `tdbear.analyzer.Curve.attr_nums`
+    
+    A `Label` object representing attribute word numbers.
+    """
     attr_nums: Labels
+
+    """# `tdbear.analyzer.Curve.data`
+    
+    Numpy array representing time series data.
+    """
     data: np.ndarray[int, np.dtype[np.float64]]
+
+    """# `tdbear.analyzer.Curve.meta`
+    
+    dict object representing meta information.
+    """
     meta: dict[str, list[Any]]
+
+    """# `tdbear.analyzer.Curve.name`
+    
+    Name of this object.
+    """
     name: str
 
     @property
     def attr_words(self) -> tuple[str, ...]:
+        """# `tdbear.analyzer.Curve.attr_words`
+
+        tuple of attribute words.
+        """
         return (*self.attr_nums,)
 
     @property
-    def resolution(self) -> int:
-        return self.data.shape[1]
-
-    @property
     def delay_proportion(self) -> Float64Array:
+        """# `tdbear.analyzer.Curve.delay_proportion`
+
+        Time series data of delay (indicates that no attribute is selected.).
+        """
         return self.data[-1]
 
     @property
+    def dominance_duration(self) -> Float64Array:
+        """# `tdbear.analyzer.Curve.dominance_duration`
+
+        Dominance duration for each attribute word.
+        """
+        return self.data.sum(1) / self.resolution
+
+    @property
     def normalized_delay(self) -> float:
+        """# `tdbear.analyzer.Curve.normalized_delay`
+
+        Delay time that is normalized between 0 and 1.
+        """
         return np.mean(self.delay_proportion, dtype=float)
 
     @property
-    def dominance_duration(self) -> Float64Array:
-        return self.data.sum(1) / self.resolution
+    def resolution(self) -> int:
+        """# `tdbear.analyzer.Curve.resolution`
+
+        Number of discretized interval of the entire duration (start to stop).
+        """
+        return self.data.shape[1]
 
     def __eq__(self, other: Self) -> bool:
         return self is other

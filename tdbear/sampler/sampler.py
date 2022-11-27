@@ -1,4 +1,5 @@
 from __future__ import annotations
+from importlib.resources import files
 from typing import Callable, Iterable, Any
 import time
 import os
@@ -6,6 +7,7 @@ import datetime
 
 import PySimpleGUI as sg
 
+from .. import sampler
 from .._util import Console
 from .sampler_options import Options
 from . import sampler_util as su
@@ -189,6 +191,7 @@ def run() -> None:
         finalize=True,
         return_keyboard_events=True,
         font=(Options.font_family, Options.font_size),
+        icon=files(sampler).joinpath("favicon.ico"),
     )
 
     # function that updates the gui components

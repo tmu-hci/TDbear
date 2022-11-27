@@ -1,7 +1,6 @@
 import setuptools
 import os
 
-package_name: str = "tdbear"
 package_version: str
 
 root_dir: str = os.path.abspath(os.path.dirname(__file__))
@@ -19,9 +18,9 @@ with open("README.md", "r", encoding="UTF-8") as f:
 
 setuptools.setup(
     python_requires=">=3.11.0",
-    name=package_name,
+    name="tdbear",
     version=package_version,
-    description=("A module assisting with experiments " "and analysis of TDS methods."),
+    description=("A module assisting with experiments and analysis of TDS methods."),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://www.comp.sd.tmu.ac.jp/hci/TDbear/",
@@ -33,7 +32,7 @@ setuptools.setup(
     license="MIT",
     keywords="TDS TDbear",
     packages=setuptools.find_packages(),
-    package_data={"tdbear": ["analyzer/dataset/*.yml"]},
+    package_data={"tdbear": ["analyzer/dataset/*.yml", "sampler/favicon.ico"]},
     install_requires=install_requires,
     classifiers=[
         "Programming Language :: Python :: 3",
