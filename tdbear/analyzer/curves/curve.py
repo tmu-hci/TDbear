@@ -16,25 +16,21 @@ class Curve(metaclass=abc.ABCMeta):
     """
 
     """# `tdbear.analyzer.Curve.attr_nums`
-    
     A `Label` object representing attribute word numbers.
     """
     attr_nums: Labels
 
     """# `tdbear.analyzer.Curve.data`
-    
     Numpy array representing time series data.
     """
     data: np.ndarray[int, np.dtype[np.float64]]
 
     """# `tdbear.analyzer.Curve.meta`
-    
     dict object representing meta information.
     """
     meta: dict[str, list[Any]]
 
     """# `tdbear.analyzer.Curve.name`
-    
     Name of this object.
     """
     name: str
