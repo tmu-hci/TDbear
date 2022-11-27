@@ -9,45 +9,6 @@ from .._util import Console
 from .curves import TDSContainer
 
 
-def load_file(
-    file_path: str, resolution: int = 1000, print_status: bool = True
-) -> TDSContainer:
-    """# `tdbear.analyzer.load_file()`
-
-    Generates a TDSContainer object from a single file.
-    The file must be in the format in which TDSampler outputs.
-
-    ## Args
-    - `file_path`    : File path including the extension.
-    - `resolution`   : Number of discretized interval of the entire
-                              duration (start to stop). Defaults to `1000`.
-    - `print_status` : Set this `True` to indicate which file
-                              is being loaded. Defaults to `True`.
-
-    ## Returns
-    - `TDSContainer` : A list-like object that contains multiple
-                       `TDSCurve` objects.
-
-    ## Throws
-    - `OSError` : Thrown when an error occurs while opening the file.
-
-    ## Examples
-    ```python
-    import tdbear.analyzer as ta
-
-    dataset = ta.load_file("./nanakoberry/PA/PA1.yml")
-    ```
-    """
-
-    file_path = file_path.replace("\\", "/")
-
-    if print_status:
-        Console.log(("Loading ", Console.CYAN), (f'"{file_path}"', Console.MAGENTA))
-
-    with open(file_path, "r", encoding="UTF-8", newline="\n") as f:
-        return TDSContainer.from_yaml(f, resolution)
-
-
 def load_dir(
     dir_path: str = ".",
     file_extension: str = ".yml",
@@ -104,6 +65,45 @@ def load_dir(
         raise FileNotFoundError("Directory seems to be empty.")
 
     return obj
+
+
+def load_file(
+    file_path: str, resolution: int = 1000, print_status: bool = True
+) -> TDSContainer:
+    """# `tdbear.analyzer.load_file()`
+
+    Generates a TDSContainer object from a single file.
+    The file must be in the format in which TDSampler outputs.
+
+    ## Args
+    - `file_path`    : File path including the extension.
+    - `resolution`   : Number of discretized interval of the entire
+                              duration (start to stop). Defaults to `1000`.
+    - `print_status` : Set this `True` to indicate which file
+                              is being loaded. Defaults to `True`.
+
+    ## Returns
+    - `TDSContainer` : A list-like object that contains multiple
+                       `TDSCurve` objects.
+
+    ## Throws
+    - `OSError` : Thrown when an error occurs while opening the file.
+
+    ## Examples
+    ```python
+    import tdbear.analyzer as ta
+
+    dataset = ta.load_file("./nanakoberry/PA/PA1.yml")
+    ```
+    """
+
+    file_path = file_path.replace("\\", "/")
+
+    if print_status:
+        Console.log(("Loading ", Console.CYAN), (f'"{file_path}"', Console.MAGENTA))
+
+    with open(file_path, "r", encoding="UTF-8", newline="\n") as f:
+        return TDSContainer.from_yaml(f, resolution)
 
 
 def repl(locals: Mapping[str, Any] | None = None, filename: str = "<console>") -> None:
