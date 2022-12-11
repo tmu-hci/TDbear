@@ -36,6 +36,8 @@ class PCA:
         self,
         tds_curves: Iterable[TDSCurve],
         *,
+        # default data extractor uses dominance duration
+        # for each attribute without delay
         data_extractor: Callable[
             [TDSCurve], Iterable[float]
         ] = lambda e: e.dominance_duration[:-1],
