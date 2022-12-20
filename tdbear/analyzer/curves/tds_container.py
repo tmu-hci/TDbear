@@ -1,18 +1,19 @@
 from __future__ import annotations
-from io import TextIOWrapper
 from typing import (
     Callable,
     Hashable,
     Iterable,
-    SupportsIndex,
-    Sequence,
     Self,
+    Sequence,
+    SupportsIndex,
     Any,
     overload,
 )
-import random
-import itertools
+
 import functools
+import io
+import itertools
+import random
 
 import yaml
 import matplotlib.pyplot as plt
@@ -25,7 +26,7 @@ class TDSContainer(list[TDSCurve]):
     """# `tdbear.analyzer.TDSContainer`"""
 
     @staticmethod
-    def from_yaml(yml: str | TextIOWrapper, resolution: int = 1000) -> TDSContainer:
+    def from_yaml(yml: str | io.TextIOWrapper, resolution: int = 1000) -> TDSContainer:
         """# `tdbear.analyzer.TDSContainer.from_yaml()`
 
         Creates a new `TDSContainer` instance from a YAML string.
@@ -143,10 +144,9 @@ class TDSContainer(list[TDSCurve]):
         super().__setitem__(index, value)
 
     def __repr__(self, /) -> str:
-        n: int = self @ abs
         return (
             f"[TDSContainer of {self @ len} TDSCurve "
-            f'({n} trial{"" if n <= 1 else "s"})]'
+            f'({(n := self @ abs)} trial{"" if n <= 1 else "s"})]'
         )
 
     def __abs__(self, /) -> int:
@@ -179,9 +179,7 @@ class TDSContainer(list[TDSCurve]):
             group_func = func
 
         for curve in self:
-            key = curve @ group_func
-
-            if key not in result:
+            if (key := curve @ group_func) not in result:
                 result[key] = TDSContainer()
 
             result[key].append(curve)

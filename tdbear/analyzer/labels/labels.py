@@ -16,7 +16,6 @@ class Labels:
         return cls(keys)
 
     def __init__(self, keys: tuple[str, ...], /):
-
         self.__keys: tuple[str, ...] = keys
         self.__vals: dict[str, int] = dict(zip(keys, range(len(keys))))
 

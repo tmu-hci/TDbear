@@ -1,5 +1,11 @@
 from __future__ import annotations as __anotations
-from typing import Callable, Iterable, overload
+from typing import (
+    Callable,
+    Iterable,
+    overload,
+)
+
+import itertools
 
 import numpy as np
 from sklearn import decomposition
@@ -23,14 +29,15 @@ class PCA:
 
     def __init__(self, arg1: int | decomposition.PCA = 2, /):
 
-        self.model: decomposition.PCA
-        self.tds_curves: tuple[TDSCurve, ...] = tuple()
+        self.model: decomposition.PCA = (
+            decomposition.PCA(arg1) if isinstance(arg1, int) else arg1
+        )
+        self.tds_curves: tuple[TDSCurve, ...] = ()
         self.labels: Labels = Labels.get_instance([])
 
-        if isinstance(arg1, int):
-            self.model = decomposition.PCA(arg1)
-        else:
-            self.model = arg1
+    @staticmethod
+    def default_data_extractor(curve: TDSCurve) -> Float64Array:
+        return curve.dominance_duration[:-1]
 
     def fit(
         self,
@@ -38,9 +45,7 @@ class PCA:
         *,
         # default data extractor uses dominance duration
         # for each attribute without delay
-        data_extractor: Callable[
-            [TDSCurve], Iterable[float]
-        ] = lambda e: e.dominance_duration[:-1],
+        data_extractor: Callable[[TDSCurve], Iterable[float]] = default_data_extractor,
         standardize: bool = True,
         labels: Labels | None = None,
     ) -> PCAResult:
@@ -48,12 +53,17 @@ class PCA:
         result = PCAResult()
         result.tds_curves = (*tds_curves,)
 
+        data: Float64Array = np.array([*map(data_extractor, result.tds_curves)])
+
+        nonzero_index = np.array(~np.isclose(data.sum(0), 0.0))
+
         if labels is None:
             result.labels = result.tds_curves[0].attr_nums
         else:
             result.labels = labels
 
-        data: Float64Array = np.array([*map(data_extractor, result.tds_curves)])
+        result.labels = Labels((*itertools.compress(result.labels, nonzero_index),))
+        data = data[:, nonzero_index]
 
         if standardize:
             data = (data - data.mean(0)) / data.std(0)

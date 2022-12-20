@@ -6,3 +6,4 @@ __pycache__/
 dist/
 build/
 tdbear.egg-info/
+test/

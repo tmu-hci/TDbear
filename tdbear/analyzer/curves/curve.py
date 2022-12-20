@@ -1,5 +1,6 @@
 from __future__ import annotations
 from typing import Any, Callable, Iterator, Self
+import functools
 import abc
 import warnings
 
@@ -35,7 +36,7 @@ class Curve(metaclass=abc.ABCMeta):
     """
     name: str
 
-    @property
+    @functools.cached_property
     def attr_words(self) -> tuple[str, ...]:
         """# `tdbear.analyzer.Curve.attr_words`
 

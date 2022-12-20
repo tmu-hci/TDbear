@@ -1,13 +1,18 @@
 from __future__ import annotations
-from typing import Iterator, Iterable, Self, Any
-import operator
+from typing import (
+    Iterator,
+    Iterable,
+    Self,
+    Any,
+)
+
 import itertools
 import functools
 import warnings
 
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.figure as figure
+import numpy as np
 
 from ..._util import Float64Array
 from ..labels import Labels
@@ -20,31 +25,33 @@ class TDSCurve(Curve):
     A class representing time-series data of TDS trials.
     """
 
-    @staticmethod
-    def from_dict(dic: dict, resolution: int = 1000) -> TDSCurve:
+    @classmethod
+    def from_dict(cls, dic: dict, resolution: int = 1000) -> Self:
         timing_data: dict[str, list[float]] = dic["data"]
         duration: float = dic["duration"]
         delay: float = max(itertools.chain.from_iterable(timing_data.values()))
         attr_nums: Labels = Labels.get_instance(sorted(timing_data))
 
-        data: Float64Array = np.zeros((len(attr_nums) + 1, resolution), np.float64)
         meta: dict[str, list[Any]] = dic["meta"]
 
-        r = resolution / duration
-        times: list[tuple[int, int]] = [
-            (attr_nums[attr], round(t * r))
-            for attr in timing_data
-            for t in timing_data[attr]
-        ]
+        r: float = resolution / duration
 
-        times.sort(key=operator.itemgetter(1))
+        ind = np.fromiter(
+            (
+                (attr_nums[attr], round(t * r))
+                for attr in timing_data
+                for t in timing_data[attr]
+            ),
+            (int, 2),
+        )
 
-        times.append((-1, resolution))
+        ind = ind[np.argsort(ind[:, 1])]
 
-        data[-1, : times[0][1]] = 1.0
+        data = np.zeros((len(attr_nums) + 1, len(ind) + 1))
 
-        for (a, b) in itertools.pairwise(times):
-            data[a[0], a[1] : b[1]] = 1.0
+        data[ind[:, 0], range(1, len(ind) + 1)] = data[-1, 0] = 1.0
+
+        data = np.repeat(data, np.diff(ind[:, 1], prepend=0, append=resolution), axis=1)
 
         return TDSCurve(attr_nums, [duration], [delay], data, meta)
 
